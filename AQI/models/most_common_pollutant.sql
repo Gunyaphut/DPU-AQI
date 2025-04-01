@@ -1,4 +1,4 @@
-      -- ค้นหาสารมลพิษที่พบบ่อยที่สุดในสหรัฐฯ
+      -- ค้นหาสารมลพิษที่พบบ่อยที่สุด
       SELECT 
           mainus AS main_pollutant,
           COUNT(*) AS occurrences
