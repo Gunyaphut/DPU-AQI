@@ -1,0 +1,43 @@
+version: 2
+
+models:
+  - name: daily_avg_aqi
+    description: Retrieves the average AQI (US standard) recorded for each day.
+    columns:
+      - name: date
+        description: Date of the AQI measurement.
+      - name: avg_aqius
+        description: Average AQI value recorded on that day.
+
+  - name: max_aqi_day
+    description: Retrieves the day with the highest AQI (US standard) recorded.
+    columns:
+      - name: date
+        description: Date of the highest AQI measurement.
+      - name: max_aqius
+        description: Maximum AQI value recorded on that day.
+
+  - name: days_exceeding_150
+    description: Retrieves the number of days where AQI (US standard) exceeded 150.
+    columns:
+      - name: days_exceeding_150
+        description: Count of days where AQI exceeded 150.
+   
+
+  - name: most_common_pollutant
+    description: Retrieves the most common primary pollutant (US standard).
+    columns:
+      - name: main_pollutant
+        description: Most frequently recorded main pollutant.
+      - name: occurrences
+        description: Number of times this pollutant was recorded.
+    
+
+  - name: avg_aqi_comparison
+    description: Compares the average AQI values between US and China standards.
+    columns:
+      - name: avg_aqius_us
+        description: Average AQI value based on US standard.
+      - name: avg_aqicn_china
+        description: Average AQI value based on China standard.
+ 

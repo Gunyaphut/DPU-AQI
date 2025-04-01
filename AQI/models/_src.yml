@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: AQI
+    database: postgres
+    schema: public
+    tables:
+      - name: pollution_data
